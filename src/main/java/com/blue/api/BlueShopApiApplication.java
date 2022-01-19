@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BlueMotorsApiApplication {
+public class BlueShopApiApplication {
 
 	/*private final PasswordEncoder passwordEncoder;
 	private final IUserDetailsRepository userDetailsRepository;
@@ -16,7 +16,7 @@ public class BlueMotorsApiApplication {
 	}*/
 
 	public static void main(String[] args) {
-		SpringApplication.run(BlueMotorsApiApplication.class, args);
+		SpringApplication.run(BlueShopApiApplication.class, args);
 	}
 
 	/*@PostConstruct
