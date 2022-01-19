@@ -1,7 +1,7 @@
 package com.blue.api.services;
 
 import com.blue.api.entities.User;
-import com.blue.api.repository.IUserDetailsRepository;
+import com.blue.api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -12,10 +12,10 @@ import java.util.Optional;
 @Service
 public class UserService implements UserDetailsService {
 
-    private final IUserDetailsRepository userDetailsRepository;
+    private final UserRepository userDetailsRepository;
 
     @Autowired
-    public UserService(IUserDetailsRepository userDetailsRepository) {
+    public UserService(UserRepository userDetailsRepository) {
         this.userDetailsRepository = userDetailsRepository;
     }
 
